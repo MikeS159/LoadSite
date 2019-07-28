@@ -51,11 +51,10 @@ def getWebPage(url):
 def main():
 	print(sys.argv[1])
 	print('running')
-	while True:
-		try:
-			getSiteMap(sys.argv[1])
-		except:
-			print("Error")
+	try:
+		getSiteMap(sys.argv[1])
+	except:
+		print("Error")
 
 if __name__=="__main__":
     main()
